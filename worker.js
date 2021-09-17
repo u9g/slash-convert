@@ -1,8 +1,7 @@
 module.exports = (data, token = 'TOKEN') => {
   const prefix = `const { Client, Intents } = require('discord.js')
 const { SlashCommandBuilder } = require('@discordjs/builders')
-
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] })\n\n\n`
+const client = new Client({ intents: [Intents.FLAGS.GUILDS] })\n\n`
   const middle = data.mapValues(cmd => makeCommand(parseCommand(cmd))).toJSON().join('\n')
   const suffix = `\nconst commands = [${data.mapValues(cmd => cmd.name + 'Command').toJSON().join(', ')}]
 // When the client is ready, run this code (only once)
