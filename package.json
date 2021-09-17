@@ -1,0 +1,15 @@
+{
+  "name": "slash-convert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "slash-convert": "./cli.js"
+  },
+  "keywords": [],
+  "author": "u9g <winworkswow@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^13.1.0"
+  }
+}
